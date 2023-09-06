@@ -77,7 +77,7 @@ a{
     max-width: 60%;
     height: auto;
 }
-.top-part{
+.top-part,.footer{
     background-color:#1F2937;
     padding: 0;
     margin: 0;
@@ -109,4 +109,43 @@ a{
 }
 .top-media p{
     text-align: center;
+}
+.quote{
+    display: flex;
+    background-color: #eeee;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.quote p{
+    margin: 0 17%;
+}
+.quote .p1{
+
+}
+.quote .p2{
+    font-weight: 800;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.bot-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 130px;
+    padding: 20px;
+    background-color: blue;
+    border: solid black 1px;
+    width:  60%;
+    height: 30%;
+    min-width: 700px;
+    margin: 80px auto;
+    border-radius: 10px;
+}
+.footer{
+     text-align: center;
+     color: white;
+     padding: 30px;
 }
