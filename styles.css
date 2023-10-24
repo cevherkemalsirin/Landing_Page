@@ -2,10 +2,14 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-/*    display: flex;
-    justify-content: center;*/
     padding: 0;
     margin: 0;
+}
+
+.top-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Header{
@@ -13,63 +17,69 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 8px;
-    margin-left: 20%;
-    margin-right: 20%; 
+    margin-left: 12%;
+    margin-right: 16%; 
 }
 
 .HeaderUL{
     list-style-type: none;
     display: flex;
     gap:30px;
+    width: 200px;
+   
 }
 a{
     text-decoration-line: none;
-    background-color: #eeee;
-    padding: 10px;
-    border-radius: 40%;
+    background-color: rgba(114, 114, 143, 0.362);
+    padding: 5px;
+    border-radius: 10%;
     border: 2px black solid;
-    color: red;
+    color: rgb(255, 188, 72);
+    border: 3px rgb(255, 188, 72) solid;
     font-weight: bold;
 }
 
 .Icon{
     width: auto;
     height: 50px;
-    border: 3px rgb(240, 207, 148) solid;
-    border-radius: 80%;
+    border: 3px rgb(255, 188, 72) solid;
+    border-radius: 60%;
+    
 }
 
 .Enterance{
     display: flex;
-    justify-content: space-between;
-    flex: 1;   
-    gap: 100px;
-    margin-left: 20%;
-    margin-right: 20%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 0% 12%;
     padding-bottom: 100px;
-
+    margin-top: 20px;
 }
-.Enterance .Info{
+ .Info{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex: auto;
-    min-width: 282px;
+    justify-content: space-evenly;
+    align-items: center;  
     align-self: center;
-    width: 350px;
+    flex:1 1 auto;
+    width: 300px;
     
 }
 .Enterance p{
     color:  #F9FAF8;
     font-size: 24px;
     font-weight: 400;
+    text-shadow: 0 0 3px  rgb(255, 188, 72);
+    flex: 0 0 auto;
+ 
 }
 .Enterance h1{
     color:  #F9FAF8;
     font-weight:bolder;
     font-size: 42px;
+    align-self: flex-start;
+    padding-left: 10px;
 }
 .Enterance button, .bot-media button{ 
 
@@ -80,29 +90,31 @@ a{
     font-weight: 600;
     padding: 10px 30px;
     border-radius: 5px;
-    border: none;
+    border: 2px solid rgb(255, 188, 72);
 }
 .Enterance button{
     align-self: center;
 }
 .Enterance img{
-    border:solid 1px rgb(160, 133, 82);
+    border:solid 2px rgb(160, 133, 82);
     border-radius: 20px;
-    max-width: 60%;
+    width: 60%; 
     height: auto;
+    flex: 1 0.8 auto;
+
 }
+
 .top-part,.footer{
     background-color:#1F2937;
     padding: 0;
     margin: 0;
-
 }
 
 .midtxt{
     text-align: center;
     font-weight: bold;
     font-size: 28px;
-
+    color: rgb(255, 188, 72);
 }
 
 .top-media ul{
@@ -110,10 +122,7 @@ a{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    margin-left: 16%;
-    margin-right: 16%;
-    padding: 10px;
-    height: 650px;
+    margin: 10%;
     gap: 10px;
 
 }
@@ -126,6 +135,7 @@ a{
 }
 .top-media p{
     text-align: center;
+    font-weight: bold;
 }
 .quote{
     display: flex;
